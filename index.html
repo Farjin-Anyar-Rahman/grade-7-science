@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Alaan's Science Lab</title>
+  <meta name="description" content="Interactive Grade 7 science revision: explainers, animations and lots of practice questions.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔬</text></svg>">
+  <link rel="stylesheet" href="css/style.css?v=3">
+</head>
+<body>
+  <div class="bg-blobs" aria-hidden="true"><span></span><span></span><span></span></div>
+
+  <header class="topbar">
+    <a class="brand" href="#/">
+      <span class="brand-icon">🔬</span>
+      <span class="brand-text">Alaan's <b>Science Lab</b></span>
+    </a>
+    <nav class="topnav">
+      <a href="#/">Home</a>
+      <a href="#/cards">Flashcards</a>
+      <a href="#/exam">Exam mode</a>
+      <a href="#/clinic">Test fixes</a>
+    </nav>
+    <div class="top-right">
+      <div class="xp-pill" id="xpPill" title="Your XP and level">⭐ <span id="xpVal">0</span> XP · <span id="lvlName">Cell Rookie</span></div>
+      <button class="icon-btn" id="soundBtn" title="Sound on/off" aria-label="Toggle sound">🔊</button>
+      <button class="icon-btn" id="themeBtn" title="Light/dark mode" aria-label="Toggle theme">🌙</button>
+      <button class="icon-btn menu-btn" id="menuBtn" aria-label="Menu">☰</button>
+    </div>
+  </header>
+
+  <main id="app" tabindex="-1"></main>
+
+  <footer class="foot">
+    Made for Alaan · Grade 7 Science · Mid-term chapters 1, 2, 4, 5, 6, 7 · Progress is saved in this browser.
+    <button class="linkish" id="resetBtn">Reset progress</button>
+  </footer>
+
+  <canvas id="confetti" aria-hidden="true"></canvas>
+  <div id="toast" role="status" aria-live="polite"></div>
+
+  <!-- Content (add new chapters here) -->
+  <script src="js/content/ch1.js?v=3"></script>
+  <script src="js/content/ch2.js?v=3"></script>
+  <script src="js/content/ch4.js?v=3"></script>
+  <script src="js/content/ch5.js?v=3"></script>
+  <script src="js/content/ch6.js?v=3"></script>
+  <script src="js/content/ch7.js?v=3"></script>
+  <!-- Engine -->
+  <script src="js/core.js?v=3"></script>
+  <script src="js/quiz.js?v=3"></script>
+  <script src="js/widgets-ch1.js?v=3"></script>
+  <script src="js/widgets-ch2.js?v=3"></script>
+  <script src="js/widgets-ch4.js?v=3"></script>
+  <script src="js/widgets-ch5.js?v=3"></script>
+  <script src="js/widgets-ch6.js?v=3"></script>
+  <script src="js/widgets-ch7.js?v=3"></script>
+  <script src="js/app.js?v=3"></script>
+</body>
+</html>
